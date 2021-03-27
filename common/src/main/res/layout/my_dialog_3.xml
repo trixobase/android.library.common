@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sc_dialog">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical|start"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/sc_dialog_title"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/iv_app"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_dialog_title_id"
+            style="@style/TextView_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:text="@string/information"
+            android:textSize="20sp"
+            android:textColor="@color/dialog_title_text"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:minHeight="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_dialog_title_id"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/sc_dialog_bottom"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/bt_dialog_no_id"
+            style="@style/Button_Dialog"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="Ok"
+            tools:ignore="MissingConstraints"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

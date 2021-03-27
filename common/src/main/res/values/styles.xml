@@ -1,0 +1,304 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Trixobase" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="materialButtonStyle">@style/MaterialButton</item>
+        <item name="tabStyle">@style/Widget.App.TabLayout</item>
+    </style>
+
+    <style name="Theme.Trixobase.Button.Home" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/button_background</item>
+        <item name="colorOnPrimary">@color/button_text</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="ThemeTrixobase" parent="Theme.AppCompat.DayNight">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorSecondary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="MaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/ButtonStyleTextColor</item>
+    </style>
+
+    <style name="MaterialButtonForm" parent="Widget.MaterialComponents.Button">
+        <item name="colorPrimary">@color/grayBlack</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="MaterialButtonArticle" parent="Widget.MaterialComponents.Button">
+        <item name="colorPrimary">@color/title_label</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="MaterialRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:checked">false</item>
+        <item name="android:textSize">17sp</item>
+        <item name="colorSecondary">@color/radio_circle</item>
+    </style>
+
+    <style name="Widget.App.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TabLayout</item>
+        <item name="tabTextAppearance">@style/TextAppearance.App.Button</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TabLayout" parent="">
+        <item name="colorPrimary">@color/toolbar_second_background</item>
+        <item name="colorSurface">@color/colorPrimaryDark</item>
+        <item name="colorOnSurface">@color/toolbar_second_no_selected</item>
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="TextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/yellow</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="TextInputLayout_ViewError" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="boxBackgroundColor">@color/error_background</item>
+        <item name="startIconDrawable">@drawable/ic_warning</item>
+        <item name="startIconContentDescription">@string/warning</item>
+        <item name="startIconTint">@color/error_text</item>
+        <item name="boxStrokeColor">@color/black</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <color name="mtrl_textinput_default_box_stroke_color">@color/error_background</color>
+
+    <style name="ProgressBar">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="SpotsDialog" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">@string/please_wait</item>
+        <item name="DialogSpotColor">@color/colorPrimary</item>
+        <item name="DialogSpotCount">8</item>
+        <item name="android:colorBackground">@color/grayBlack</item>
+    </style>
+
+    <style name="CheckBox" parent="Base.Theme.AppCompat">
+        <item name="android:layout_width">27dp</item>
+        <item name="android:layout_height">27dp</item>
+        <item name="android:checked">false</item>
+        <item name="colorAccent">@color/checkbox_selected</item>
+        <item name="android:textColorSecondary">@color/checkbox_no_selected</item>
+    </style>
+
+    <style name="CheckBox_Livrable" parent="Base.Theme.AppCompat">
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:checked">false</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorSecondary">@color/text_default</item>
+    </style>
+
+    <style name="ButtonStyleTextColor">
+        <item name="colorPrimary">@color/button_background</item>
+        <item name="colorOnPrimary">@color/button_text</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Button_Forms" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/sc_button_main</item>
+        <item name="colorButtonNormal">@color/button_background</item>
+    </style>
+
+    <style name="ButtonGoogleStyleTextColor" parent="@style/Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/social_google</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:text">@string/google</item>
+        <item name="android:textColor">@color/social_google</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="icon">@drawable/ic_google</item>
+    </style>
+
+    <style name="ButtonFacebookStyleTextColor" parent="@style/Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/social_facebook</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:text">@string/facebook</item>
+        <item name="android:textColor">@color/social_facebook</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="icon">@drawable/ic_facebook</item>
+    </style>
+
+    <style name="ButtonTrixobaseStyle" parent="@style/Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:text">Plus</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="icon">@drawable/ic_trixo</item>
+    </style>
+
+    <style name="ButtonSave" parent="@style/Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="colorPrimary">@color/maroon</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:text">@string/save</item>
+        <item name="android:textColor">@color/social_facebook</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="icon">@drawable/ic_save</item>
+        <item name="iconGravity">end</item>
+    </style>
+
+    <style name="Button" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/sc_primary</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbar_height</item>
+        <item name="android:background">@color/toolbar_background</item>
+        <item name="title">@string/app_name</item>
+    </style>
+
+    <style name="Toolbar_Second">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbar_height</item>
+        <item name="android:fontFamily">@font/sofia</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/toolbar_second_title</item>
+        <item name="android:background">@color/toolbar_second_background</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextView_Title" parent="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView_Label" parent="TextView">
+        <item name="android:textColor">@color/title_label</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">@font/sofia</item>
+    </style>
+
+    <style name="TextView_Empty_List" parent="TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:fontFamily">@font/apple</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="Button_Dialog">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/dialog_button_text</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/apple</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:background">@drawable/sc_dialog_button</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="hintTextColor">@color/toolbar_second_no_selected</item>
+        <item name="android:textCursorDrawable">@drawable/my_cursor</item>
+        <item name="android:background">@drawable/sc_edit_search</item>
+    </style>
+
+    <style name="RadioButton" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/radio_button_gray_red</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleWidth">10dp</item>
+        <item name="android:checked">false</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/radio_text</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Theme.Trixobase.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TrixobaseTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+</resources>

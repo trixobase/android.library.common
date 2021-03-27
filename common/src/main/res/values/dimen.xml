@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="dialog_width">260dp</dimen>
+    <dimen name="dialog_content_text">16sp</dimen>
+
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <dimen name="button_width">180dp</dimen>
+
+    <dimen name="edittext_height">45dp</dimen>
+
+    <dimen name="option_icon">25dp</dimen>
+
+</resources>

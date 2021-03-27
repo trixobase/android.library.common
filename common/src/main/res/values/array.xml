@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="list_choice_drink">
+        <item>"1"</item>
+        <item>"3"</item>
+        <item>"6"</item>
+        <item>"12"</item>
+        <item>"24"</item>
+    </string-array>
+    <string-array name="list_choice_min">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+    </string-array>
+    <string-array name="list_option_id">
+        <item>@string/mark</item>
+        <item>@string/question</item>
+    </string-array>
+</resources>
