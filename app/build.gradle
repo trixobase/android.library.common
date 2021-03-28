@@ -1,11 +1,12 @@
 plugins {
-    id 'com.android.library'
+    id 'com.android.application'
 }
 
 android {
     compileSdkVersion 29
 
     defaultConfig {
+        applicationId "com.trixobase.android.common"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
