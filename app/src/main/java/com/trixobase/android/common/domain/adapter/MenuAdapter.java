@@ -10,12 +10,12 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.trixobase.android.common.R;
 import com.trixobase.android.common.constants.BaseName;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import cm.trixobase.library.common.R;
 import com.trixobase.android.common.manager.Response;
 
 /*

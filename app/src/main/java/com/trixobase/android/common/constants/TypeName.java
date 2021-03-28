@@ -2,7 +2,7 @@ package com.trixobase.android.common.constants;
 
 import android.content.Context;
 
-import cm.trixobase.library.common.R;
+import com.trixobase.android.common.R;
 
 /*
  * Powered by Trixobase Enterprise on 17/11/20.

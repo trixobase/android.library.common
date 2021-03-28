@@ -8,6 +8,7 @@ import android.os.Build;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+import com.trixobase.android.common.R;
 import com.trixobase.android.common.constants.BaseName;
 
 import org.joda.time.DateTime;
@@ -15,8 +16,6 @@ import org.joda.time.DateTime;
 import java.net.URL;
 import java.util.Calendar;
 import java.util.regex.Pattern;
-
-import cm.trixobase.library.common.R;
 
 /*
  * Powered by Trixobase Enterprise on 11/11/19.

@@ -2,9 +2,9 @@ package com.trixobase.android.common.domain.ui;
 
 import android.content.ContentValues;
 
+import com.trixobase.android.common.R;
 import com.trixobase.android.common.constants.BaseName;
 
-import cm.trixobase.library.common.R;
 import com.trixobase.android.common.manager.Manager;
 
 /*
